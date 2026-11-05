@@ -1,49 +1,47 @@
-# LabReserva — Protótipo de média fidelidade
+# LabReserva — Mid-fidelity prototype
 
-Protótipo navegável, em escala de cinza, de um sistema de **reserva de laboratórios e empréstimo de equipamentos** para uma faculdade (caso fictício: Faculdade Horizonte). Trabalho acadêmico de Interação Humano-Computador (IHC) do curso de Engenharia de Software da UniRV.
+**Author:** João Henrique Porfirio Firmiano, with assistance from Claude (Anthropic).
 
-**▶ [Abrir o protótipo no Penpot](https://design.penpot.app/?screen=viewer&file-id=c6f51e89-5d00-81ce-8008-e4eafc136fb0&page-id=c6f51e89-5d00-81ce-8008-e4eafc136fb1&section=interactions&index=0&zoom=fit&share-id=28115847-11dc-4234-872a-bf97b0e21492)**. No modo de visualização, escolha o fluxo no menu superior (T1, T2 ou T3) e navegue clicando nos botões.
+Clickable grayscale prototype of a **lab booking and equipment loan** system for a college (fictional case: Faculdade Horizonte). Academic project for the Human-Computer Interaction (HCI) course of the Software Engineering program at UniRV.
 
-## O problema
+**▶ [Open the prototype in Penpot](https://design.penpot.app/?screen=viewer&file-id=c6f51e89-5d00-81ce-8008-e4eafc136fb0&page-id=c6f51e89-5d00-81ce-8008-e4eafc136fb1&section=interactions&index=0&zoom=fit&share-id=28115847-11dc-4234-872a-bf97b0e21492)**. In view mode, pick the flow in the top menu (T1, T2 or T3) and navigate by clicking the buttons.
 
-Hoje as reservas são feitas por planilha e WhatsApp com o técnico. Isso gera conflitos de horário descobertos na hora da aula, falta de informação sobre software e máquinas funcionando, horários livres invisíveis para os alunos, empréstimos sem registro e um técnico sobrecarregado.
+## The problem
 
-## Tarefas prototipadas
+Today, bookings are made through a spreadsheet and WhatsApp messages to the lab technician. This leads to scheduling conflicts discovered right at class time, no information about installed software or working machines, free time slots that students can't see, unrecorded loans and an overloaded technician.
 
-| Tarefa | Usuário | Dispositivo | O fluxo cobre |
+## Prototyped tasks
+
+| Task | User | Device | The flow covers |
 |---|---|---|---|
-| T1 | Professor | Celular (360 × 800) | Entrar, buscar laboratório por data, horário e software, ver disponibilidade, criar reserva recorrente semanal e receber confirmação |
-| T2 | Aluno | Celular (360 × 800) | Entrar, encontrar horário livre, reservar para um grupo, solicitar equipamento e cancelar em "Minhas reservas" |
-| T3 | Técnico | Desktop (1280 × 720) | Ver solicitações pendentes, resolver um conflito (aprovar uma e recusar outra com justificativa) e registrar a devolução de um equipamento |
+| T1 | Professor | Mobile (360 × 800) | Log in, search for a lab by date, time and software, check availability, create a weekly recurring booking and get a confirmation |
+| T2 | Student | Mobile (360 × 800) | Log in, find a free slot, book for a group, request equipment and cancel in "My bookings" |
+| T3 | Technician | Desktop (1280 × 720) | View pending requests, resolve a conflict (approve one and decline another with a reason) and record an equipment return |
 
-São 23 telas, com estados de vazio, erro e confirmação.
+There are 23 screens, including empty, error and confirmation states.
 
-## Telas principais
+## Main screens
 
-| T1 · Disponibilidade | T1 · Reserva recorrente | T2 · Erro (limite de 2 h) | T2 · Estado vazio |
+| T1 · Availability | T1 · Recurring booking | T2 · Error (2 h limit) | T2 · Empty state |
 |---|---|---|---|
 | ![P04](telas/P04-disponibilidade.png) | ![P05](telas/P05-reserva-recorrente.png) | ![A05](telas/A05-erro-limite-de-2-horas.png) | ![A11](telas/A11-minhas-reservas-vazio.png) |
 
-**T3 · Resolver conflito (técnico)**
+**T3 · Resolve conflict (technician)**
 
 ![D02](telas/D02-resolver-conflito.png)
 
-Todas as telas estão na pasta [`telas/`](telas/).
+All screens are in the [`telas/`](telas/) folder.
 
-## Mapa de telas
+## Screen map
 
-![Mapa de telas](docs/mapa-de-telas.png)
+![Screen map](docs/mapa-de-telas.png)
 
-Seta contínua: caminho da tarefa. Seta tracejada: voltar ou cancelar. Seta pontilhada: menu fixo.
+Solid arrow: task path. Dashed arrow: go back or cancel. Dotted arrow: fixed menu.
 
-## Documentação
+## Documentation
 
-O [relatório completo (PDF)](docs/relatorio.pdf) traz o perfil de usuário, as personas (e o antiusuário), o cenário de uso, a análise hierárquica da tarefa (HTA), as metas de usabilidade (ISO 9241-11), as decisões de design e as limitações do protótipo.
+The [full report (PDF, in Portuguese)](docs/relatorio.pdf) covers the user profile, the personas (and the anti-persona), the usage scenario, the hierarchical task analysis (HTA), the usability goals (ISO 9241-11), the design decisions and the prototype's limitations.
 
-## Ferramenta
+## Tool
 
-[Penpot](https://penpot.app): gratuito, de código aberto e no navegador.
-
-## Autor
-
-João Henrique Porfirio Firmiano, com auxílio do Claude (Anthropic).
+[Penpot](https://penpot.app): free, open source and browser-based.
